@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const path = require('path')
 const mongoose = require('mongoose')
 require('dotenv').config()
 const Bills = require('./models/BillSchema')
@@ -16,7 +17,7 @@ db.once('open', () => {
 
 app.use(cors())
 
-
+app.use(express.static(path.join(__dirname, 'build')))
 
 mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@clustercostcalc.urg3z.mongodb.net/NLOB`)
 

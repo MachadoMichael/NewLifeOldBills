@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const path = require('path')
 const mongoose = require('mongoose')
 require('dotenv').config()
 const Bills = require('./models/BillSchema')
@@ -16,6 +15,8 @@ db.once('open', () => {
 })
 
 app.use(cors())
+
+
 
 mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@clustercostcalc.urg3z.mongodb.net/NLOB`)
 
@@ -56,7 +57,7 @@ app.post('/stateMonth', express.json(), async (req, res) => {
 })
 
 
-app.get('/stateBills', async (req, res) => {
+app.get('/statebills', async (req, res) => {
     let docs = await Bills.find({})
     res.send(docs)
 })

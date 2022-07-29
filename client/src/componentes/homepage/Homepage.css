@@ -1,0 +1,69 @@
+.backgroundHomepage {
+    background-color: #11151C;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+img {
+    display: flex;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #364156;
+}
+
+.painelHomepage {
+    width: 40%;
+    border-radius: 15px;
+    background-color: #D66853;
+    box-sizing: border-box;
+    padding: 1%;
+    box-shadow: 1px 1px 5px #364156;
+}
+
+.textQuestion {
+    font-size: 30px;
+    font-family: 'Arima', cursive;
+    font-weight: bold;
+    background-color: #364156;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #11151C;
+    border: 1px solid #11151C;
+    margin: 1%;
+    margin-bottom: 0%;
+    text-align: center;
+    padding: 0.5%;
+    
+}
+
+
+.textAnswer {
+    font-size: 20px;
+    margin: 2%;
+    font-family: 'Arima', cursive;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2%;
+}
+
+@media (max-width: 600px) {
+    img {
+        display: none;
+    }
+
+    .painelHomepage {
+        width: 80%;
+    }
+
+    .textQuestion {
+        font-size: 14px;
+    }
+
+    .textAnswer{
+        font-size: 12px;
+       
+    }
+}

@@ -1,0 +1,76 @@
+.background {
+  background-color: #11151C;
+  margin-top: 1%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+
+.containerMonth {
+  margin: auto;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  border-radius: 15px;
+}
+
+.MonthPainel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 70vh;
+  background-color: #364156;
+  margin: 1%;
+  border-radius: 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.t2month {
+  background-color: #11151C;
+  text-align: center;
+  width: 110%;
+  border-radius: 5px;
+}
+
+.month {
+  background-color: #11151C;
+  margin: auto;
+  width: 60%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #11151C;
+}
+
+.month:hover {
+  background-color: #D66853;
+  cursor: pointer;
+}
+
+.select {
+  background-color: #D66853;
+}
+
+@media (max-width: 600px) {
+  .containerMonth {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .MonthPainel {
+    width: 100%;
+  }
+
+  .month {
+    font-size: 12px;
+    width: 80%;
+    height: 30px;
+  }
+
+
+}

@@ -1,0 +1,251 @@
+.background {
+    background-color: #11151C;
+    margin-top: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.horizontalPainel,
+.total {
+    background-color: #D66853;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+
+}
+
+.innerPainelHorizontal {
+
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 5vh;
+    margin: auto;
+    align-items: center;
+    margin: 1%;
+
+}
+
+.inputSalario {
+    display: flex;
+    margin-left: 2%;
+    height: 50%;
+    background-color: beige;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.painel {
+    border-radius: 5px;
+    background-color: #364156;
+    width: 50%;
+    height: 54vh;
+    box-shadow: 2px 2px 5px black;
+    margin: 1%;
+    overflow-y: auto;
+
+}
+
+.t2 {
+    display: flex;
+    width: 80%;
+    height: 8%;
+    text-align: center;
+    background-color: #11151C;
+    border-radius: 10px;
+    margin-left: -10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.addCusto {
+    background: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 1%;
+    border: none;
+    color: #D66853;
+}
+
+.addCusto:hover {
+    color: beige;
+    cursor: pointer;
+}
+
+.modal {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #11151c83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.molduraModalBill {
+    margin: auto;
+    display: inline;
+
+    width: 170px;
+    height: 30px;
+    padding: 1%;
+    background-color: #D66853;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #11151C;
+    border: 1px solid #11151C;
+}
+
+.molduraModalMonth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    background-color: #D66853;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #11151C;
+    border: 1px solid #11151C;
+    padding: 0.5%;
+}
+
+
+.inputNewBill {
+    width: 100px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: beige;
+    box-shadow: 1px 1px 5px #11151C;
+}
+
+.invisibleInput {
+    display: none;
+}
+
+.btnModal {
+    width: 50px;
+    height: 21px;
+    margin-left: 3%;
+    border-radius: 5px;
+    color: beige;
+    background-color: #364156;
+    border: 1px solid #11151C;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #11151C;
+
+}
+
+.btnModal:hover {
+    box-shadow: 1px 1px 5px beige;
+}
+
+.percent {
+    width: 60%;
+    height: 3vh;
+    margin: auto;
+    margin-bottom: 5px;
+    color: beige;
+    background-color: #11151C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 80px;
+
+}
+
+.inputs {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: -20px
+}
+
+.input {
+    border-radius: 5px;
+    background-color: beige;
+}
+
+.addMonthPainel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 1%;
+    background-color: #D66853;
+    width: 20%;
+    height: 30px;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+
+.btnAddMonth {
+    cursor: pointer;
+}
+
+.btnAddMonth:hover {
+    color: #364156;
+}
+
+@media (max-width: 600px) {
+    .horizontalPainel,
+    .total {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .innerPainelHorizontal {
+        width: 100%;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 80%;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+    }
+
+    .painel{
+        width: 100%;
+    }
+
+    .t2{
+        height: 10%;
+        font-size: 16px;   
+    }
+
+    .addMonthPainel{
+        width: 80%;
+    }
+
+    .btnAddMonth{
+        font-size: 12px;
+    }
+
+    .inputs{
+        display: inline;
+    }
+}

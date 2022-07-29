@@ -17,8 +17,6 @@ db.once('open', () => {
 
 app.use(cors())
 
-app.use(express.static(path.join(__dirname, 'build')))
-
 mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@clustercostcalc.urg3z.mongodb.net/NLOB`)
 
 app.post('/addBill', express.urlencoded({ extended: true }), async (req, res) => {
